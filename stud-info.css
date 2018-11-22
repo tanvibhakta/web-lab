@@ -1,0 +1,58 @@
+body {
+  font-size: 14pt;
+}
+
+student {
+  margin: 10pt 0 30pt 0;
+}
+
+sname {
+  text-transform: uppercase;
+  color: blue;
+}
+
+usn:before {
+  content: "USN: ";
+}
+
+usn {
+  margin-left: 20pt;
+  display: block;
+  text-transform: uppercase;
+}
+
+college:before {
+  content: "Affiliated College: ";
+}
+
+college {
+  display: block;
+  margin-left: 20pt;
+}
+
+branch:before {
+  content: "Branch: ";
+}
+
+branch {
+  display: block;
+  margin-left: 20pt;
+}
+
+yoj:before {
+  content: "Year of Joining: ";
+}
+
+yoj {
+  display: block;
+  margin-left: 20pt;
+}
+
+email:before {
+  content: "EMAILID: ";
+}
+
+email {
+  display: block;
+  margin-left: 20pt;
+}

@@ -1,0 +1,22 @@
+<script>
+        var n1 = parseInt(prompt("Enter the first number"))
+        var op = prompt("Enter the operator")
+        var n2 = parseInt(prompt("Enter the second number"))
+        var result = 0;
+        if(op == "+") {
+          result = n1+n2;
+        }
+        else if (op == "-") {
+          result = n1-n2;
+        }
+        else if (op == "*") {
+          result = n1*n2;
+        }
+        else if (op == "/"){
+          result = n1/n2;
+        }
+        else {
+          alert("Please enter a valid operator")
+        }
+        alert(result)
+</script>

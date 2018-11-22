@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Functions</title>
+</head>
+<body onload="evalinput()">
+      <script>
+        function evalinput() {
+          var str = prompt("Enter string or number");
+          if (Number.isInteger(parseInt(str)))
+            document.getElementById("result").innerHTML = "<h3>Reverse of " +
+                        str + " is " + str.split("").reverse().join("") + "</h3>";
+
+          else {
+            var vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+            var letter = str.split("").find(function(letter) {
+              return vowels.includes(letter) ? letter : 0;
+            });
+
+            if (!letter)
+              document.getElementById("result").innerHTML = "The string doesn't have a vowel"
+            else
+              document.getElementById("result").innerHTML = "<h3>The leftmost vowel is: " + letter + "<br/>The position of the leftmost vowel is: " + str.indexOf(letter) + "</h3><br/>";
+              }
+          }
+      </script>
+      <center id="result"></center>
+  </body>
+</html>
